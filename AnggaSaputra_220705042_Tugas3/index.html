@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Lomba Olahraga</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet"> <!-- Link to Sancreek font -->
+    <style>
+        /* Styling dasar */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Sancreek', sans-serif; /* Menggunakan font Sancreek untuk seluruh halaman */
+            color: white;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(to bottom, #D2B48C, #D8BFD8); /* Gradien background */
+            min-height: 100vh; /* Pastikan halaman memiliki tinggi minimal sebesar layar */
+        }
+
+        /* Header */
+        header {
+            color: black;
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih transparan */
+        }
+
+        /* Teks di dalam header */
+        .header-text {
+            font-size: 2.5em; /* Ukuran font */
+            color: #000000; /* Mengubah warna teks menjadi hitam */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Bayangan teks */
+            font-weight: bold; /* Menebalkan tulisan */
+        }
+
+        nav a {
+            color: #000000; /* Mengubah warna tautan menjadi hitam */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Konten Tengah */
+        .content {
+            color: black;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between; /* Menjaga jarak antar elemen */
+            align-items: flex-start; /* Menjaga elemen berada di bagian atas */
+            flex-grow: 1; /* Agar konten mengambil ruang yang tersisa */
+            background-color: rgba(255, 255, 255, 0.8); /* Latar belakang transparan */
+        }
+
+        .content .text {
+            max-width: 45%; /* Batasi teks hingga 45% untuk memberikan ruang pada gambar */
+            text-align: left; /* Membuat teks rata kiri */
+            font-family: 'Sancreek', cursive; /* Menggunakan font Sancreek untuk teks */
+            margin-right: 20px; /* Memberikan jarak antara teks dan gambar */
+        }
+
+        .motivational-text {
+            font-family: 'Sancreek', cursive; /* Menggunakan font Sancreek */
+            font-size: 1.5em; /* Ukuran font */
+            margin-bottom: 10px; /* Jarak bawah dari teks */
+            color: #000000; /* Mengubah warna teks menjadi hitam */
+            font-weight: bold; /* Menebalkan tulisan */
+        }
+
+        .image-container {
+            display: grid; /* Tetap menggunakan grid layout */
+            grid-template-columns: repeat(2, 1fr); /* Menjadikan dua gambar dalam satu baris */
+            gap: 10px; /* Mengurangi jarak horizontal antara gambar */
+            justify-content: center; /* Memastikan gambar berada di tengah container */
+            align-items: center; /* Memastikan gambar sejajar secara vertikal */
+        }
+
+        .image-container img {
+            width: 100%; /* Menyesuaikan lebar container */
+            max-width: 150px; /* Atur lebar maksimum gambar */
+            height: auto; /* Menjaga rasio aspek gambar */
+            border-radius: 10px; /* Mengatur sudut gambar */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            color: black;
+            width: 100%; /* Mengatur lebar footer menjadi 100% */
+            padding: 15px;
+            text-align: center;
+            margin-top: auto; /* Menyisipkan margin otomatis untuk mendorong footer ke bawah */
+            border-radius: 0; /* Menghapus radius sudut agar sesuai dengan lebar */
+            background-color: transparent; /* Menghilangkan latar belakang footer */
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-text">
+            <p>Welcome to the School Sports Competition</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Tentang</a>
+            <a href="pendaftaran.html">Daftar</a>
+            <a href="contact.html">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Konten Tengah -->
+    <div class="content">
+        <div class="text">
+            <div class="motivational-text">
+                <p>Let's Go!</p> <!-- Teks yang disesuaikan -->
+            </div>
+            <p>
+                "Bergabunglah dalam Lomba Olahraga Nasional! Ayo tunjukkan semangatmu, raih prestasi, dan jadilah bagian dari tim pemenang!"
+            </p>
+        </div>
+
+        <!-- Gambar-gambar dalam grid (2 frame) -->
+        <div class="image-container">
+            <img src="angga1.jpg" alt="Gambar Atlet 1">
+            <img src="angga2.jpg" alt="Gambar Atlet 2">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lomba Olahraga. Semua hak dilindungi oleh UUD. <a href="#contact">Hubungi Saya</a></p>
+    </footer>
+
+</body>
+</html>

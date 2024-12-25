@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Lomba Olahraga</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: 'Sancreek', cursive; /* Font Sancreek untuk keseluruhan */
+            background-color: #5B3A29; /* Warna coklat tua sebagai latar belakang */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.9); /* Transparan putih */
+            padding: 2em;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-container h1 {
+            font-family: 'Sancreek', cursive; /* Font Sancreek untuk judul */
+            color: #C49A6A; /* Coklat muda untuk judul */
+            margin-bottom: 1em;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        .login-container label {
+            font-size: 1.1em;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .login-container input,
+        .login-container button {
+            width: 100%; 
+            height: 50px; 
+            padding: 0.8em; 
+            margin-bottom: 1em; 
+            font-size: 1em; 
+            border-radius: 6px; 
+            box-sizing: border-box; 
+        }
+
+        .login-container input {
+            border: 1px solid #C49A6A; /* Coklat muda untuk border */
+            background-color: #FFF5F8; 
+        }
+
+        .login-container input:focus {
+            border-color: #D2B48C; /* Warna fokus */
+            outline: none;
+            box-shadow: 0 0 5px rgba(30, 136, 229, 0.5); /* Efek fokus */
+        }
+
+        .login-container button {
+            background-color: #C49A6A; /* Coklat muda untuk tombol */
+            color: white; /* Warna teks tombol */
+            border: none; /* Menghilangkan border tombol */
+            cursor: pointer; /* Menampilkan pointer saat hover */
+            font-weight: bold; /* Teks lebih tebal */
+            transition: background-color 0.3s ease; /* Animasi saat hover */
+        }
+
+        .login-container button:hover {
+            background-color: #B08B6E; /* Lebih gelap untuk hover */
+        }
+
+        .login-container a {
+            color: #C49A6A; /* Link dengan warna coklat muda */
+            text-decoration: none;
+            font-size: 1em;
+            text-align: center;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Kontainer Login -->
+    <div class="login-container">
+        <h1>Login</h1>
+        <form action="index.html" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Masukkan username Anda" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan password Anda" required>
+            
+            <button type="submit">Login</button>
+        </form>
+        <p>Belum punya akun? <a href="pendaftaran.html">Daftar di sini</a></p>
+    </div>
+
+</body>
+</html>

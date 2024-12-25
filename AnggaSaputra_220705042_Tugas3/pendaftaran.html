@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Peserta Lomba Olahraga</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet"> <!-- Menggunakan font Sancreek -->
+    <style>
+        /* Mengatur body dan html untuk memastikan background mengisi layar penuh */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Sancreek', sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(to right, #D2B48C, #D0B49F); /* Gradien coklat muda */
+        }
+
+        /* Kontainer untuk form */
+        .container {
+            max-width: 400px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            position: relative;
+            text-align: left;
+            animation: muncul 1.5s forwards;
+        }
+
+        /* Animasi untuk munculnya form */
+        @keyframes muncul {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Styling untuk judul */
+        h1 {
+            font-size: 2.5em;
+            color: #C49A6A; /* Warna coklat muda untuk judul */
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Sancreek', cursive; /* Menggunakan font Sancreek untuk judul */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        label {
+            font-size: 1em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input, select {
+            padding: 10px;
+            font-size: 1em;
+            border: 2px solid #C49A6A; /* Warna coklat muda untuk border */
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            border-color: #B08B6E; /* Warna border saat fokus */
+        }
+
+        button {
+            padding: 10px;
+            background-color: #C49A6A; /* Warna coklat muda untuk tombol */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #B08B6E; /* Warna lebih gelap saat hover */
+        }
+
+        .link {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .link a {
+            color: #C49A6A; /* Warna coklat muda untuk tautan */
+            text-decoration: none;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Registrasi Peserta</h1>
+        <form action="add.php" method="POST">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+        
+            <label for="umur">Umur:</label>
+            <input type="number" id="umur" name="umur" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="telepon">Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" required pattern="[0-9]{10,12}" title="Masukkan nomor telepon yang valid (10-12 digit)">
+        
+            <label for="cabang">Cabang Olahraga:</label>
+            <select id="cabang" name="cabang" required>
+                <option value="Tennis">Tennis</option>
+                <option value="Tennis Meja">Tennis Meja</option>
+                <option value="Basket">Basket</option>
+                <option value="Badminton">Badminton</option>
+            </select>
+        
+            <button type="submit">Daftar</button>
+        </form>
+
+        <div class="link">
+            <p>Sudah terdaftar? <a href="crud.php">Lihat Daftar Peserta</a></p>
+        </div>
+    </div>
+
+</body>
+</html>

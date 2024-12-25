@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Lomba Olahraga</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet">
+    <style>
+        /* Styling dasar */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Sancreek', sans-serif; /* Menggunakan font Sancreek untuk seluruh halaman */
+            color: black;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #D2B48C; /* Background coklat muda */
+            min-height: 100vh; /* Pastikan halaman memiliki tinggi minimal sebesar layar */
+            align-items: center; /* Memusatkan konten */
+        }
+
+        /* Header */
+        header {
+            color: black;
+            width: 80%;
+            margin: 20px auto;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang header putih transparan */
+        }
+
+        .header-text {
+            font-size: 2em; /* Ukuran font */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Bayangan teks */
+            font-family: 'Sancreek', cursive; /* Menggunakan font Sancreek */
+            font-weight: bold; /* Menebalkan tulisan */
+        }
+
+        nav a {
+            color: #000000; /* Mengubah warna tautan menjadi hitam */
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Konten Tengah */
+        .content {
+            color: black;
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang konten putih transparan */
+            display: flex;
+            flex-direction: column; /* Mengubah menjadi kolom */
+            align-items: center; /* Memusatkan elemen */
+        }
+
+        .text-content {
+            max-width: 80%; /* Memperbesar lebar konten teks */
+            text-align: center; /* Rata tengah untuk teks */
+            font-family: 'Sancreek', cursive; /* Menggunakan font Sancreek untuk teks */
+        }
+
+        .text-content h2 {
+            color: #000000; /* Warna judul */
+            font-size: 1.8em; /* Ukuran font judul */
+            margin-bottom: 10px; /* Jarak bawah dari judul */
+            font-weight: bold; /* Menebalkan judul */
+        }
+
+        .text-content p {
+            font-size: 1.2em; /* Ukuran font untuk paragraf */
+            margin: 10px 0; /* Jarak antar paragraf */
+        }
+
+        .text-content a {
+            color: #0000FF; /* Warna tautan */
+            text-decoration: none;
+        }
+
+        .text-content a:hover {
+            text-decoration: underline; /* Garis bawah pada tautan saat hover */
+        }
+
+        .image-content img {
+            width: 100%; /* Menyesuaikan lebar gambar */
+            max-width: 200px; /* Atur lebar maksimum gambar */
+            height: auto; /* Menjaga rasio aspek gambar */
+            border-radius: 10px; /* Mengatur sudut gambar */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan pada gambar */
+            margin-top: 20px; /* Jarak atas untuk gambar */
+        }
+
+        /* Footer */
+        footer {
+            color: black;
+            width: 100%; /* Mengatur lebar footer menjadi 100% */
+            padding: 15px;
+            text-align: center;
+            margin-top: auto; /* Menyisipkan margin otomatis untuk mendorong footer ke bawah */
+            background-color: rgba(255, 255, 255, 0.9); /* Latar belakang footer putih transparan */
+            border-radius: 0; /* Menghapus radius sudut agar sesuai dengan lebar */
+        }
+
+        footer p {
+            margin: 0; /* Menghapus margin dari footer */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-text">
+            <p>Hubungi Kami</p>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Tentang</a>
+            <a href="pendaftaran.html">Daftar</a>
+            <a href="contact.html">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Konten Tengah -->
+    <div class="content">
+        <div class="text-content">
+            <h2>Kontak Kami</h2>
+            <p>
+                Jika Anda memiliki pertanyaan atau ingin informasi lebih lanjut, silakan hubungi kami melalui email di 
+                <a href="mailto:info@lombaolahraga.com">info@lombaolahraga.com</a>.
+            </p>
+            <p>
+                Atau hubungi nomor telepon berikut:
+                <strong>+62 812 3456 7890</strong>
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="angga2.jpg" alt="Gambar Kontak">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lomba Olahraga. Semua hak dilindungi oleh UUD. <a href="#contact">Hubungi Kami</a></p>
+    </footer>
+
+</body>
+</html>
